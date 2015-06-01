@@ -7717,30 +7717,30 @@ footer .footer-list a:hover {
 }
 
 #sherpa {
-    background: #21364b
+    background: #464646
 }
 
 #sherpa h2 {
-    color: #a7e0f3
+    color: #ffffff
 }
 
 #sherpa h3 {
-    color: #fff
+    color: #aeadad
 }
 
 #sherpa p {
-    color: #869bb0
+    color: #ffffff
 }
 
 #sherpa p .main-btn {
-    color: #8c6c07;
-    background: #fae298;
+    color: #ffffff;
+    background: #616060;
     padding-left: 2em;
     padding-right: 2em
 }
 
 #sherpa p .main-btn:hover {
-    background: #f8d467
+    background: #555454
 }
 
 #sherpa p .main-btn i {

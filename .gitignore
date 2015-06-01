@@ -4,4 +4,4 @@ out
 .gradle
 build
 *.iml
-myGo/.idea/workspace.xml
+.idea/workspace.xml
