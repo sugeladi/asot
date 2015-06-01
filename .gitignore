@@ -1,7 +1,4 @@
-.idea
-out
+logs/*
 .DS_Store
-.gradle
-build
+.idea
 *.iml
-.idea/workspace.xml
