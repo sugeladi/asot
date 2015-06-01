@@ -28,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16897507" vertical-offset="13958" max-vertical-offset="16126">
-              <caret line="640" column="29" selection-start-line="640" selection-start-column="29" selection-end-line="640" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.565097" vertical-offset="13958" max-vertical-offset="16126">
+              <caret line="653" column="26" selection-start-line="653" selection-start-column="26" selection-end-line="653" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -231,9 +231,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
@@ -562,12 +566,12 @@
       <workItem from="1433004278347" duration="5988000" />
       <workItem from="1433085690410" duration="2636000" />
       <workItem from="1433156591124" duration="459000" />
-      <workItem from="1433168505900" duration="108000" />
+      <workItem from="1433168505900" duration="265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12714000" />
+    <option name="totallyTimeSpent" value="12871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -620,6 +624,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -873,8 +881,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16897507" vertical-offset="13958" max-vertical-offset="16126">
-          <caret line="640" column="29" selection-start-line="640" selection-start-column="29" selection-end-line="640" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.565097" vertical-offset="13958" max-vertical-offset="16126">
+          <caret line="653" column="26" selection-start-line="653" selection-start-column="26" selection-end-line="653" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
