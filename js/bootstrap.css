@@ -6884,7 +6884,7 @@ th.visible-print, td.visible-print {
 #top {
     padding-top: 0;
     overflow: hidden;
-    background: #e0ebe8
+    background: #b2d2cd;
 }
 
 @media (min-width: 992px) {
@@ -6952,7 +6952,7 @@ header.nav-root {
 
 @media (min-width: 992px) {
     header.nav-root {
-        background: #E0EBE8;
+        background: #b2d2cd;
         -webkit-box-shadow: none;
         box-shadow: none;
         -webkit-transition: all .8s;
@@ -6974,7 +6974,7 @@ header.nav-root {
 .nav-list li a {
     display: inline-block;
     text-decoration: none;
-    color: #45b29a;
+    color: #51a598;
     font-weight: 400;
     margin: 0 0 0 1em;
     font-size: 120%
@@ -7857,8 +7857,8 @@ footer .footer-list a:hover {
 }
 
 #retrolove p .main-btn {
-    color: #c30d06;
-    background: #f9554f;
+    color: white;
+    background: #FF9894;
     padding-left: 2em;
     padding-right: 2em
 }
