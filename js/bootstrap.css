@@ -6835,6 +6835,7 @@ th.visible-print, td.visible-print {
     position: absolute;
     height: 72px;
     width: 72px;
+    background-size: 72px 72px
     z-index: 1000
 }
 
