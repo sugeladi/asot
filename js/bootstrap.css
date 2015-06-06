@@ -6854,16 +6854,6 @@ th.visible-print, td.visible-print {
     z-index: 800
 }
 
-#header-logo i {
-    position: absolute;
-    left: 7px;
-    top: 11px;
-    width: 300px;
-    height: 200px;
-    background: url(../img/content/nav/header-logo-i.svg) no-repeat;
-    z-index: 900
-}
-
 #header-logo-err {
     -webkit-animation: fadeIn .3s ease-in-out;
     -moz-transition: fadeIn .3s ease-in-out;
@@ -6896,7 +6886,7 @@ th.visible-print, td.visible-print {
 
 header {
     background: #e0ebe8;
-    padding: 2em 0
+    padding: 0.5em 0
 }
 
 header .nav-list {
@@ -7583,22 +7573,6 @@ article header h2 {
 @media (-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx) {
     .btn-hldr .main-btn i.email {
         background-image: url(../images/e-mail.png);
-        background-size: 24px 15px
-    }
-}
-
-.btn-hldr .main-btn i.drib {
-    position: absolute;
-    height: 15px;
-    width: 24px;
-    left: 12%;
-    top: 38%;
-    background-image: url(../img/ui/drib.png)
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx) {
-    .btn-hldr .main-btn i.drib {
-        background-image: url(../img/ui/drib@2x.png);
         background-size: 24px 15px
     }
 }
