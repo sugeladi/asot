@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html class="js no-touch rgba backgroundsize borderradius boxshadow opacity cssanimations csstransitions generatedcontent inlinesvg wf-adobegaramondpro-i4-active wf-adobegaramondpro-i7-active wf-adobegaramondpro-n4-active wf-adobegaramondpro-n7-active wf-brandongrotesque-i5-active wf-brandongrotesque-n3-active wf-brandongrotesque-n4-active wf-brandongrotesque-n5-active wf-brandongrotesque-n7-active wf-active"
-      >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -32,9 +31,12 @@
     <link rel="icon" type="image/png" href="http://seanhalpin.io/favicon.png">
 
     <link rel="stylesheet" href="./js/bootstrap.css">
-
+    <link href="styles/core.css" type="text/css" rel="stylesheet"/>
+    <script src="./asottt_files/jquery-1.10.2.min.js"></script>
     <script async="" src="./asottt_files/analytics.js"></script>
     <script type="text/javascript" src="./asottt_files/wdj6cpr.js"></script>
+    <script src="./js/popup_layer.js" type="text/javascript" language="javascript"></script>
+
     <style type="text/css">.tk-brandon-grotesque {
         font-family: "brandon-grotesque", sans-serif;
     }
@@ -47,7 +49,32 @@
     <script type="text/javascript">try {
         Typekit.load();
     } catch (e) {
-    }</script>
+    }
+    </script>
+    <script language="javascript">
+        $(document).ready(function() {
+
+
+            var left = $(window).width()/3;
+            var top=$(window).height()/2;
+            //示例6，使用遮罩
+            var pop = new PopupLayer({trigger:"#ele6",popupBlk:"#blk6",closeBtn:"#close6",useOverlay:true,offsets:{x:-left,y:-top}});
+
+            $(document).click(function(event){
+                console.log("event.target ",event.target)
+                var tar = event.target.textContent
+                if ("查看围棋"==tar){
+                    return;
+                }
+                var _con = $(".blk");
+                if(!_con.is(event.target)){
+                    console.log("#close6 ",pop);
+                    pop.close();
+                }
+            });
+
+        });
+    </script>
 
     <script src="./asottt_files/respond.min.js"></script>
     <script src="./asottt_files/modernizr.js"></script>
@@ -57,7 +84,17 @@
 
 
 <body class="">
-
+<div id="blk6" class="blk" style="display:none;">
+    <div class="main">
+        <h2>围棋</h2>
+        <a href="javascript:void(0)" id="close6" class="closeBtn">关闭</a>
+        <ul>
+            <img class="lazy" src="./images/weiqi.png"
+                 alt="Weiqi"
+                 width="100%" height="538" style="display: inline;">
+        </ul>
+    </div>
+</div>
 <section id="top">
 
     <header id="home-top" class="nav-top nav-fixed headroom headroom--not-top headroom--pinned">
@@ -370,7 +407,8 @@
                     </p>
 
                     <p class="btn-hldr shot-btn">
-                        <a href="#" class="main-btn new-window">去看看<i class="drib"></i></a>
+
+                        <a class="main-btn"  id="ele6" >查看围棋<i class="drib"></i></a>
                     </p>
 
 
@@ -648,7 +686,6 @@
 </footer>
 
 
-<script src="./asottt_files/jquery-1.10.2.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="./asottt_files/bootstrap.min.js"></script>
 <script src="./asottt_files/app.js"></script>
