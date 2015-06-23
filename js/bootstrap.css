@@ -6831,17 +6831,18 @@ th.visible-print, td.visible-print {
 }
 
 #header-logo .mask {
-    background-image: url(../images/me.png);
+    background-image: url(../images/me_bg.png);
     position: absolute;
     height: 72px;
     width: 72px;
+    margin-top: 4px;
     /*background-size: 72px 72px*/
     z-index: 1000
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx) {
     #header-logo .mask {
-        background-image: url(../images/me.png);
+        background-image: url(../images/me_bg.png);
         background-size: 72px 72px
     }
 }
@@ -6852,6 +6853,16 @@ th.visible-print, td.visible-print {
     height: 72px;
     width: 72px;
     z-index: 800
+}
+
+#header-logo i {
+    position: absolute;
+    left: 7px;
+    top: 11px;
+    width: 300px;
+    height: 200px;
+    background: url(../images/favicon.ico) no-repeat;
+    z-index: 900
 }
 
 #header-logo-err {
@@ -7910,7 +7921,7 @@ footer .footer-list a:hover {
 }
 
 #text-king {
-    background: #679895
+    background: #3d8fc9
 }
 
 #text-king h2 {
@@ -7927,13 +7938,13 @@ footer .footer-list a:hover {
 
 #text-king p .main-btn {
     color: #fff;
-    background: #5d8986;
+    background: #49ade6;
     padding-left: 2em;
     padding-right: 2em
 }
 
 #text-king p .main-btn:hover {
-    background: #527a77
+    background: #3281B8
 }
 
 #text-king p .main-btn i {

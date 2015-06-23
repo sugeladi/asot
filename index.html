@@ -20,15 +20,15 @@
     <meta name="keywords" content="asot, design">
 
 
-    <meta name="msapplication-TileImage" content="http://seanhalpin.io/assets/img/ui/app/144.png">
+    <meta name="msapplication-TileImage" content="/images/favicon.ico">
     <meta name="msapplication-TileColor" content="#E0EBE8">
 
     <link rel="shortcut icon" href="./images/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://seanhalpin.io/assets/img/ui/app/144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://seanhalpin.io/assets/img/ui/app/120.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://seanhalpin.io/assets/img/ui/app/72.png">
-    <link rel="apple-touch-icon-precomposed" href="http://seanhalpin.io/assets/img/ui/app/57.png">
-    <link rel="icon" type="image/png" href="http://seanhalpin.io/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
 
     <link rel="stylesheet" href="./js/bootstrap.css">
     <link href="styles/core.css" type="text/css" rel="stylesheet"/>
@@ -59,17 +59,33 @@
             var top=$(window).height()/2;
             //示例6，使用遮罩
             var pop = new PopupLayer({trigger:"#ele6",popupBlk:"#blk6",closeBtn:"#close6",useOverlay:true,offsets:{x:-left,y:-top}});
+            //示例7，使用遮罩
+            var pop7 = new PopupLayer({trigger:"#ele7",popupBlk:"#blk7",closeBtn:"#close7",useOverlay:true,offsets:{x:-left,y:-top}});
+            //示例8，使用遮罩
+            var pop8 = new PopupLayer({trigger:"#ele8",popupBlk:"#blk8",closeBtn:"#close8",useOverlay:true,offsets:{x:-left,y:-top}});
+            //示例9，使用遮罩
+            var pop9 = new PopupLayer({trigger:"#ele9",popupBlk:"#blk9",closeBtn:"#close9",useOverlay:true,offsets:{x:-left,y:-top}});
 
             $(document).click(function(event){
                 console.log("event.target ",event.target)
                 var tar = event.target.textContent
-                if ("查看围棋"==tar){
+                if ("查看大图"==tar){
                     return;
                 }
                 var _con = $(".blk");
                 if(!_con.is(event.target)){
-                    console.log("#close6 ",pop);
-                    pop.close();
+                    if (pop.overlay != undefined) {
+                        pop.close();
+                    }
+                    if (pop7.overlay != undefined){
+                        pop7.close();
+                    }
+                    if (pop8.overlay != undefined){
+                        pop8.close();
+                    }
+                    if (pop9.overlay != undefined){
+                        pop9.close();
+                    }
                 }
             });
 
@@ -87,11 +103,52 @@
 <div id="blk6" class="blk" style="display:none;">
     <div class="main">
         <h2>围棋</h2>
-        <a href="javascript:void(0)" id="close6" class="closeBtn">关闭</a>
+        <a href="javascript:void(0)" id="close6" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
         <ul>
             <img class="lazy" src="./images/weiqi.png"
                  alt="Weiqi"
-                 width="100%" height="538" style="display: inline;">
+                 width="100%" height="100%" style="display: inline;">
+        </ul>
+    </div>
+</div>
+<div id="blk7" class="blk" style="display:none;">
+    <div class="main">
+        <h2>实惠</h2>
+        <a href="javascript:void(0)" id="close7" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
+        <ul>
+            <img class="lazy" src="./images/shihui_b.jpg"
+                 alt="实惠"
+                 width="100%" height="100%" style="display: inline;">
+        </ul>
+    </div>
+</div>
+<div id="blk8" class="blk" style="display:none;">
+    <div class="main">
+        <h2>Pogo看演出</h2>
+        <a href="javascript:void(0)" id="close8" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
+        <ul>
+            <img class="lazy" src="./images/pogo.png"
+                 alt="Pogo看演出"
+                 width="100%" height="100%" style="display: inline;">
+        </ul>
+    </div>
+</div>
+<div id="blk9" class="blk" style="display:none;">
+    <div class="main">
+        <h2>IP电话</h2>
+        <a href="javascript:void(0)" id="close9" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
+        <ul>
+            <img class="lazy" src="./images/IPphone.png"
+                 alt="IP电话"
+                 width="100%" height="100%" style="display: inline;">
         </ul>
     </div>
 </div>
@@ -408,7 +465,7 @@
 
                     <p class="btn-hldr shot-btn">
 
-                        <a class="main-btn"  id="ele6" >查看围棋<i class="drib"></i></a>
+                        <a class="main-btn"  id="ele6" >查看大图<i class="drib"></i></a>
                     </p>
 
 
@@ -433,8 +490,8 @@
 
                 <div class="shot">
 
-                    <img class="lazy" src="./asottt_files/realtii-hp.jpg"
-                         data-original="http://seanhalpin.io/assets/img/content/work/realtii-hp.jpg" alt="Realtii"
+                    <img class="lazy" src="./images/shihui.png"
+                         alt="实惠"
                          width="800" height="538" style="display: inline;">
 
                 </div>
@@ -443,20 +500,18 @@
                 <div class="shot-info">
 
 
-                    <h2>Realtii</h2>
+                    <h2>实惠APP</h2>
 
-                    <h3>Web Design</h3>
+                    <h3>UI Design</h3>
 
 
                     <p>
-                        I worked on the communication site for Realtii, a reimagining of how people search for real
-                        estate.
-                        The site called for lots of illustrations to convey its purpose, with a big focus on creating a
-                        welcoming feel.
+                        实惠APP是易居中国联合新浪网、新浪微博、分众传媒、申通快递共同推出的定位于写字楼(社区)的移动生活O2O服务平台。
                     </p>
 
                     <p class="btn-hldr shot-btn">
-                        <a href="http://drbl.in/jxyz" class="main-btn new-window">view on dribbble <i class="drib"></i></a>
+                        <a href="http://www.zcool.com.cn/work/ZMTIyNzY3MjA=.html" class="main-btn new-window">去看看<i class="drib"></i></a>
+                        <!--<a class="main-btn"  id="ele7" >查看大图<i class="drib"></i></a>-->
                     </p>
 
 
@@ -547,7 +602,8 @@
                     </p>
 
                     <p class="btn-hldr shot-btn">
-                        <a href="" class="main-btn new-window">去看看<i class="drib"></i></a>
+                        <!--<a href="" class="main-btn new-window">去看看<i class="drib"></i></a>-->
+                        <a class="main-btn"  id="ele8" >查看大图<i class="drib"></i></a>
                     </p>
 
                 </div>
@@ -572,8 +628,8 @@
                 <div class="shot">
 
 
-                    <img class="lazy" src="./asottt_files/textking-hp.jpg"
-                         data-original="http://seanhalpin.io/assets/img/content/work/textking-hp.jpg" alt="Text King"
+                    <img class="lazy" src="./images/IPphone.png"
+                         alt="IP电话"
                          width="800" height="538" style="display: inline;">
 
                 </div>
@@ -581,9 +637,9 @@
 
                 <div class="shot-info">
 
-                    <h2>Text King</h2>
+                    <h2>IP电话</h2>
 
-                    <h3>UI Design / Web Design / Responsive</h3>
+                    <h3>UI Design</h3>
 
 
                     <p>
@@ -593,7 +649,8 @@
                     </p>
 
                     <p class="btn-hldr shot-btn">
-                        <a href="http://drbl.in/iYKB" class="main-btn new-window">view on dribbble <i class="drib"></i></a>
+                        <!--<a href="#" class="main-btn new-window">view on dribbble <i class="drib"></i></a>-->
+                        <a class="main-btn"  id="ele9" >查看大图<i class="drib"></i></a>
                     </p>
 
                 </div>
@@ -633,7 +690,9 @@
 
                     <p class="btn-hldr">
 
-                        <a href="mailto:asottt@163.com" class="main-btn">发邮件 <i class="email"></i></a>
+                        <a href="mailto:asottt@163.com" class="main-btn">
+                            发邮件<i class="email"></i>
+                        </a>
 
                     </p>
 
@@ -675,8 +734,8 @@
 
             <div class="col-md-12">
 
-                <!--<p>© 2015 <a href="http://seanhalpin.io/">Sean Halpin</a>. All rights reserved.</p>-->
-                <!---->
+                <p>© 2015 <a href="http://www.asottt.com">asot</a>. All rights reserved.</p>
+
             </div>
 
         </div>
