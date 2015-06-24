@@ -2,4 +2,4 @@ logs/*
 .DS_Store
 .idea
 *.iml
-/asot/.idea/workspace.xml
+.idea/workspace.xml
