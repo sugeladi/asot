@@ -1,0 +1,112 @@
+<html>
+<title>js实现的遮罩层并可以移动的效果</title>
+<style type="text/css">
+    body {
+        margin: 0px;
+    }
+
+    .ch1 {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        filter: Alpha(opacity=30);
+    }
+
+    .ch2 {
+        left: 0px;
+        top: 0px;
+        display: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding-top: 10%;
+        z-index: 1001;
+    "
+    }
+</style>
+
+<script type="text/javascript">
+    function Open(id) {
+        div1.style.display = "block";
+        id.style.display = "block";
+    }
+    function Close(id) {
+        div1.style.display = "block";
+        id.style.display = "none";
+    }
+</script>
+
+
+<body>
+
+<div id="div1" class="ch1"></div>
+
+<table border="1">
+    <tr>
+        <td>
+            <div id="div2" class="ch2">
+
+                <table width="480" border="0" cellpadding="5" cellspacing="1" style="background: #9098B5; "
+                       align="center">
+
+                    <tr style="cursor: move;">
+                        <td><font color="#FFFFFF">提示内容：</font></td>
+                        <td align="right"><input type="button" value="关闭" onClick="Close(div2)" style="cursor: hand;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" width="100%" bgcolor="#FFFFFF" height="150" align="middle"><input type=checkbox
+                                                                                                          checked> aaa
+                            <input type=checkbox> bbb
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type=button value=提交></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <input name="button" type="button" onclick="Open(div2)" value="配置1"/>
+
+
+        </td>
+
+
+        <td>
+            <div id="div4" class="ch2">
+
+                <table width="480" border="0" cellpadding="5" cellspacing="1" style="background: #ff7300; "
+                       align="center">
+
+                    <tr style="cursor: move;">
+                        <td><font color="#FFFFFF">提示内容：</font></td>
+                        <td align="right"><input type="button" value="关闭" onClick="Close(div4)" style="cursor: hand;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" width="100%" bgcolor="#FFFFFF" height="150" align="middle"><input type=checkbox>
+                            ccc <input type=checkbox checked> ddd
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type=button value=提交></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <input name="button" type="button" onclick="Open(div4)" value="配置2"/>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+<html>
